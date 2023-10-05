@@ -6,3 +6,39 @@ CREATE TABLE IF NOT EXISTS recorrido(
     correo VARCHAR(50),
     PRIMARY KEY(id)
 )
+
+Use pwa202310a;
+
+CREATE TABLE sitio_informativo(
+	Id_nombre VARCHAR (30),
+	Informacion VARCHAR (50),
+	Correo_contacto VARCHAR (30),
+	Telefono INT (30),
+	PRIMARY KEY (Id_nombre)
+)
+
+
+Use pwa202310a;
+
+CREATE TABLE contacto(
+	Nombre VARCHAR (50),
+	Apellido1 VARCHAR (30),
+	Apellido2 VARCHAR (30),
+	Id_correo VARCHAR (50),
+	Telefono INT (30),
+	Comentarios VARCHAR (50),
+	PRIMARY KEY (Id_correo)
+)
+
+Use pwa202310a;
+
+CREATE TABLE usuario(
+	Nombre VARCHAR (50),
+	Apellido1 VARCHAR (30),
+	Apellido2 VARCHAR (30),
+   	Id_Rol VARCHAR (50),
+	Correo VARCHAR (50),
+	Telefono INT (30),
+	Comentarios VARCHAR (50),
+	PRIMARY KEY (Id_Rol)
+)
