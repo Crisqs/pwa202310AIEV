@@ -5,9 +5,7 @@ CREATE TABLE IF NOT EXISTS recorrido(
     nombre_empresa VARCHAR(30),
     correo VARCHAR(50),
     PRIMARY KEY(id)
-)
-
-Use pwa202310a;
+);
 
 CREATE TABLE sitio_informativo(
 	Id_nombre VARCHAR (30),
@@ -15,10 +13,7 @@ CREATE TABLE sitio_informativo(
 	Correo_contacto VARCHAR (30),
 	Telefono INT (30),
 	PRIMARY KEY (Id_nombre)
-)
-
-
-Use pwa202310a;
+);
 
 CREATE TABLE contacto(
 	Nombre VARCHAR (50),
@@ -28,9 +23,7 @@ CREATE TABLE contacto(
 	Telefono INT (30),
 	Comentarios VARCHAR (50),
 	PRIMARY KEY (Id_correo)
-)
-
-Use pwa202310a;
+);
 
 CREATE TABLE usuario(
 	Nombre VARCHAR (50),
@@ -41,4 +34,4 @@ CREATE TABLE usuario(
 	Telefono INT (30),
 	Comentarios VARCHAR (50),
 	PRIMARY KEY (Id_Rol)
-)
+);

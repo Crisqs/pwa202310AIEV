@@ -6,8 +6,8 @@ DROP TABLE  recorrido;
 TRUNCATE TABLE contacto;
 DROP TABLE  contacto;
 
-TRUNCATE TABLE sitio_informaivo;
-DROP TABLE  sitio_informaivo;
+TRUNCATE TABLE sitio_informativo;
+DROP TABLE  sitio_informativo;
 
 TRUNCATE TABLE usuario;
 DROP TABLE  usuario;
