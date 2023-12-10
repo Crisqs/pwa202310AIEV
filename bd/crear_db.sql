@@ -1,1 +1,1 @@
-CREATE DATABASE utsotur;
+CREATE database utsotour;

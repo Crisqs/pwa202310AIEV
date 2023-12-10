@@ -1,37 +1,24 @@
-USE utsotur;
-
-CREATE TABLE IF NOT EXISTS recorrido(
-    id INTEGER(11) NOT NULL AUTO_INCREMENT,
-    nombre_empresa VARCHAR(50),
-    correo VARCHAR(40),
-    PRIMARY KEY (id)
+USE utsotour;
+CREATE TABLE IF NOT EXISTS usuario (
+    id_usuario INT NOT NULL AUTO_INCREMENT,
+    correo VARCHAR(100),
+    contrasena VARCHAR(100),
+    PRIMARY KEY (id_usuario)
+);
+CREATE TABLE IF NOT EXISTS datos_generales(
+	id_correo INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR (50),
+	apellido1 VARCHAR (30),
+	apellido2 VARCHAR (30),
+	telefono INT (30),
+	PRIMARY KEY (id_correo)
 );
 
-    CREATE TABLE contacto(
-	Nombre VARCHAR (50),
-	Apellido1 VARCHAR (30),
-	Apellido2 VARCHAR (30),
-	Id_correo VARCHAR (50),
-	Telefono INT (30),
-	Comentarios VARCHAR (50),
-	PRIMARY KEY (Id_correo)
-);
 
-    CREATE TABLE usuario(
-	Nombre VARCHAR (50),
-	Apellido1 VARCHAR (30),
-	Apellido2 VARCHAR (30),
-    Id_Rol VARCHAR (50),
-	Correo VARCHAR (50),
-	Telefono INT (30),
-	Comentarios VARCHAR (50),
-	PRIMARY KEY (Id_Rol)
-);
-
-    CREATE TABLE sitio_informativo(
-	Id_nombre VARCHAR (30),
-	Informacion VARCHAR (50),
-	Correo_contacto VARCHAR (30),
-	Telefono INT (30),
-	PRIMARY KEY (Id_nombre)
+CREATE TABLE IF NOT EXISTS comentarios(
+	id_nombre INT NOT NULL AUTO_INCREMENT,
+	comen VARCHAR (50),
+	correo_contacto VARCHAR (100),
+	telefono INT (30),
+	PRIMARY KEY (id_nombre)
 );
